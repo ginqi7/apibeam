@@ -45,6 +45,7 @@ export default defineConfig({
         loader: resolve(__dirname, "src/pages/content/loader.ts"),
         "loader-claude": resolve(__dirname, "src/pages/content/components/claude/loader.ts"),
         "loader-zai": resolve(__dirname, "src/pages/content/components/zai/loader.ts"),
+        "loader-ai8": resolve(__dirname, "src/pages/content/components/ai8/loader.ts"),
         settingsHtml: resolve(__dirname, "src/pages/settings/index.html"),
       },
       output: {

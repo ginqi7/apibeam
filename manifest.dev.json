@@ -26,6 +26,10 @@
     {
       "resources": ["loader-zai.js"],
       "matches": ["https://chat.z.ai/*", "https://*.chat.z.ai/*"]
+    },
+    {
+      "resources": ["loader-ai8.js"],
+      "matches": ["https://ai8.rcouyi.com/*"]
     }
   ]
 }

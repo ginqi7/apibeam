@@ -68,6 +68,7 @@ export const CustomSettingsModal = ({ apiBaseUrl, onSave, onReset, onClose }: Pr
                 { id: "chatgpt", label: "ChatGPT", icon: "🤖", sublabel: "chat.openai.com" },
                 { id: "claude", label: "Claude", icon: "🟣", sublabel: "claude.ai" },
                 { id: "zai", label: "z.ai", icon: "🔵", sublabel: "chat.z.ai" },
+                { id: "ai8", label: "AI-8", icon: "🟢", sublabel: "ai8.rcouyi.com" },
               ] as { id: Provider; label: string; icon: string; sublabel: string }[]
             ).map(({ id, label, icon, sublabel }) => (
               <button

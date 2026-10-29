@@ -27,6 +27,11 @@
       "matches": ["https://chat.z.ai/*"],
       "js": ["src/pages/content/zai-index.tsx"],
       "css": ["contentStyle.css"]
+    },
+    {
+      "matches": ["https://ai8.rcouyi.com/*"],
+      "js": ["src/pages/content/ai8-index.tsx"],
+      "css": ["contentStyle.css"]
     }
   ],
   "web_accessible_resources": [
@@ -49,6 +54,10 @@
     {
       "resources": ["loader-zai.js"],
       "matches": ["https://chat.z.ai/*"]
+    },
+    {
+      "resources": ["loader-ai8.js"],
+      "matches": ["https://ai8.rcouyi.com/*"]
     },
     {
       "resources": ["src/pages/settings/index.html"],

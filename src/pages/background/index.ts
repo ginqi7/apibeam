@@ -6,19 +6,23 @@ export const DEFAULT_API_BASE_URL = "https://apibeam.bitsmall.in/";
 const chatgptBaseUrl = "https://chatgpt.com";
 const claudeBaseUrl = "https://claude.ai/new";
 const zaiBaseUrl = "https://chat.z.ai";
+const ai8BaseUrl = "https://ai8.rcouyi.com/chat";
 
 // Helper function to build provider URL with query params for temporary chat
 const buildProviderUrl = (provider: Provider, useTemporaryChat: boolean): string => {
   if (provider === 'claude') {
     const url = claudeBaseUrl;
     return useTemporaryChat ? `${url}?incognito=` : url;
+  } else if (provider === 'ai8') {
+    // ai8 has no temporary-chat URL parameter
+    return ai8BaseUrl;
   } else {
     const url = provider === 'zai' ? zaiBaseUrl : chatgptBaseUrl;
     return useTemporaryChat ? `${url}?temporary-chat=true` : url;
   }
 };
 
-export type Provider = 'chatgpt' | 'claude' | 'zai';
+export type Provider = 'chatgpt' | 'claude' | 'zai' | 'ai8';
 
 export type SettingsSchema = {
   language: string;
